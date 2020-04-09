@@ -10,13 +10,10 @@
 
 #include "localizer.h"
 #include "helpers.cpp"
-#include <stdlib.h>
-#include "debugging_helpers.cpp"
 
 using namespace std;
 
 /**
-	TODO - implement this function 
     
     Initializes a grid of beliefs to a uniform distribution. 
 

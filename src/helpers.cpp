@@ -12,7 +12,7 @@
 #include <string>
 #include <fstream>
 #include "helpers.h"
-//#include "debugging_helpers.cpp"
+#include "debugging_helpers.cpp"
 
 using namespace std;
 
@@ -122,15 +122,6 @@ float grid_sum(vector < vector <float> > grid) {
     return sum;
 }
 
-/** -----------------------------------------------
-#
-#
-#	You do not need to modify any code below here.
-#
-#
-# ------------------------------------------------- */
-
-
 /**
     Determines when two grids of floating point numbers 
     are "close enough" that they should be considered 
@@ -206,7 +197,7 @@ vector <char> read_line(string s) {
 
     @return - A grid of chars representing a map.
 */
-vector < vector <char> > read_map(string file_name) {
+vector < vector <char> > read_map(const string& file_name) {
 	ifstream infile(file_name);
 	vector < vector <char> > map;
 	if (infile.is_open()) {
@@ -220,6 +211,10 @@ vector < vector <char> > read_map(string file_name) {
 			row = read_line(line);
 			map.push_back(row);
 		}
+	}
+
+	if (map.empty()) {
+		throw std::iostream::failure("Exception opening/reading/closing file\n");
 	}
 	return map;
 }
@@ -254,9 +249,3 @@ vector < vector <float> > zeros(int height, int width) {
 	}
 	return newGrid;
 }
-
-// int main() {
-// 	vector < vector < char > > map = read_map("maps/m1.txt");
-// 	show_grid(map);
-// 	return 0;
-// }

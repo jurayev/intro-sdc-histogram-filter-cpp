@@ -31,7 +31,7 @@ bool close_enough(float v1, float v2);
 std::vector <char> read_line(std::string s);
 
 // Helper function for reading in map data
-std::vector < std::vector <char> > read_map(std::string file_name);
+std::vector < std::vector <char> > read_map(const std::string& file_name);
 
 // Creates a grid of zeros
 std::vector < std::vector <float> > zeros(int height, int width);
