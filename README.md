@@ -11,11 +11,11 @@ Histogram filter implementation using C++
 ## Getting Started (MacOS / Unix)
 1. Clone repository
 ```
-$ git clone https://github.com/jurayev/intro_sdc_histogram_filter_cpp
+$ git clone https://github.com/jurayev/intro-sdc-histogram-filter-cpp
 ```
 2. Navigate to project directory
 ```
-$ cd intro_sdc_histogram_filter_cpp
+$ cd intro-sdc-histogram-filter-cpp
 ```
 3. Build cmake project, compile source files, setup googletest libraries
 ```
