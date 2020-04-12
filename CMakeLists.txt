@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(intro_sdc_historgram_filter_cpp)
+project(intro-sdc-historgram-filter-cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
